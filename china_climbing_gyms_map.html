@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7463a2a8bc7b09bae9ad48522f668231 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7463a2a8bc7b09bae9ad48522f668231" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7463a2a8bc7b09bae9ad48522f668231 = L.map(
+                "map_7463a2a8bc7b09bae9ad48522f668231",
+                {
+                    center: [35.8617, 104.1954],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cc9f2cca641b441a7b395c5a0a60269c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cc9f2cca641b441a7b395c5a0a60269c.addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+            var marker_11a66e6f105bba5e6c869dae39dee0bb = L.marker(
+                [38.8579735, 115.490696],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_380b56aa7bd27919cebe248d2d705752 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc47180e492e38cd3fbec2399e86e0b9 = $(`<div id="html_cc47180e492e38cd3fbec2399e86e0b9" style="width: 100.0%; height: 100.0%;">Baoding: 1 gyms</div>`)[0];
+                popup_380b56aa7bd27919cebe248d2d705752.setContent(html_cc47180e492e38cd3fbec2399e86e0b9);
+            
+        
+
+        marker_11a66e6f105bba5e6c869dae39dee0bb.bindPopup(popup_380b56aa7bd27919cebe248d2d705752)
+        ;
+
+        
+    
+    
+            marker_11a66e6f105bba5e6c869dae39dee0bb.bindTooltip(
+                `<div>
+                     Baoding
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_372e1b37bdc83b6c67c411a629166765 = L.marker(
+                [40.190632, 116.412144],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_45e37fcb26bbf8e7a040ef47a240590d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7f3c2238cc5dde5e1b3dbcb6e80f8a8 = $(`<div id="html_d7f3c2238cc5dde5e1b3dbcb6e80f8a8" style="width: 100.0%; height: 100.0%;">Beijing: 27 gyms</div>`)[0];
+                popup_45e37fcb26bbf8e7a040ef47a240590d.setContent(html_d7f3c2238cc5dde5e1b3dbcb6e80f8a8);
+            
+        
+
+        marker_372e1b37bdc83b6c67c411a629166765.bindPopup(popup_45e37fcb26bbf8e7a040ef47a240590d)
+        ;
+
+        
+    
+    
+            marker_372e1b37bdc83b6c67c411a629166765.bindTooltip(
+                `<div>
+                     Beijing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b40534a09795837c9cfaaafbd2e2ec65 = L.marker(
+                [43.8844201, 125.3180998],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_179f388977c12b6d58d9d9316a7b3ebe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae57b5839a578f459adee7c94a2039b6 = $(`<div id="html_ae57b5839a578f459adee7c94a2039b6" style="width: 100.0%; height: 100.0%;">Changchun: 2 gyms</div>`)[0];
+                popup_179f388977c12b6d58d9d9316a7b3ebe.setContent(html_ae57b5839a578f459adee7c94a2039b6);
+            
+        
+
+        marker_b40534a09795837c9cfaaafbd2e2ec65.bindPopup(popup_179f388977c12b6d58d9d9316a7b3ebe)
+        ;
+
+        
+    
+    
+            marker_b40534a09795837c9cfaaafbd2e2ec65.bindTooltip(
+                `<div>
+                     Changchun
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b81662426ff450584d7f4099eb1a99b4 = L.marker(
+                [28.1450774, 113.2384362],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_e00d545bda2295dc72b413346434186d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce01d512ad0994b0518d56281902564a = $(`<div id="html_ce01d512ad0994b0518d56281902564a" style="width: 100.0%; height: 100.0%;">Changsha: 5 gyms</div>`)[0];
+                popup_e00d545bda2295dc72b413346434186d.setContent(html_ce01d512ad0994b0518d56281902564a);
+            
+        
+
+        marker_b81662426ff450584d7f4099eb1a99b4.bindPopup(popup_e00d545bda2295dc72b413346434186d)
+        ;
+
+        
+    
+    
+            marker_b81662426ff450584d7f4099eb1a99b4.bindTooltip(
+                `<div>
+                     Changsha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e16dca92f2a45529a9c18748a850fbe4 = L.marker(
+                [31.8122623, 119.9691539],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_85b29f71cc801e76d614760c4a528e8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca5d278555339e8e980f6fb33f587d83 = $(`<div id="html_ca5d278555339e8e980f6fb33f587d83" style="width: 100.0%; height: 100.0%;">Changzhou: 3 gyms</div>`)[0];
+                popup_85b29f71cc801e76d614760c4a528e8a.setContent(html_ca5d278555339e8e980f6fb33f587d83);
+            
+        
+
+        marker_e16dca92f2a45529a9c18748a850fbe4.bindPopup(popup_85b29f71cc801e76d614760c4a528e8a)
+        ;
+
+        
+    
+    
+            marker_e16dca92f2a45529a9c18748a850fbe4.bindTooltip(
+                `<div>
+                     Changzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dd9806a0993015e27105d453ca21f6e = L.marker(
+                [30.6598628, 104.0633717],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_e9fc370208b98547b62e90f7a94d1691 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d3af83ab58a713bcb1b02cca2337408 = $(`<div id="html_0d3af83ab58a713bcb1b02cca2337408" style="width: 100.0%; height: 100.0%;">Chengdu: 13 gyms</div>`)[0];
+                popup_e9fc370208b98547b62e90f7a94d1691.setContent(html_0d3af83ab58a713bcb1b02cca2337408);
+            
+        
+
+        marker_4dd9806a0993015e27105d453ca21f6e.bindPopup(popup_e9fc370208b98547b62e90f7a94d1691)
+        ;
+
+        
+    
+    
+            marker_4dd9806a0993015e27105d453ca21f6e.bindTooltip(
+                `<div>
+                     Chengdu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99a5f84db4712f41f78003a6d08afa06 = L.marker(
+                [30.05518, 107.8748712],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_764a33768de135a67c7d14ace6cf572f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44123de830c3316d0ecf517a52bde807 = $(`<div id="html_44123de830c3316d0ecf517a52bde807" style="width: 100.0%; height: 100.0%;">Chongqing: 7 gyms</div>`)[0];
+                popup_764a33768de135a67c7d14ace6cf572f.setContent(html_44123de830c3316d0ecf517a52bde807);
+            
+        
+
+        marker_99a5f84db4712f41f78003a6d08afa06.bindPopup(popup_764a33768de135a67c7d14ace6cf572f)
+        ;
+
+        
+    
+    
+            marker_99a5f84db4712f41f78003a6d08afa06.bindTooltip(
+                `<div>
+                     Chongqing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89dc28705171a5a7ae6b4d1d8f1f471c = L.marker(
+                [25.6074778, 100.2651597],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_c65f4940d8187554555335ac8934bc56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6917ebcecf624edb0b0ef0c6c42e9cc = $(`<div id="html_c6917ebcecf624edb0b0ef0c6c42e9cc" style="width: 100.0%; height: 100.0%;">Dali: 1 gyms</div>`)[0];
+                popup_c65f4940d8187554555335ac8934bc56.setContent(html_c6917ebcecf624edb0b0ef0c6c42e9cc);
+            
+        
+
+        marker_89dc28705171a5a7ae6b4d1d8f1f471c.bindPopup(popup_c65f4940d8187554555335ac8934bc56)
+        ;
+
+        
+    
+    
+            marker_89dc28705171a5a7ae6b4d1d8f1f471c.bindTooltip(
+                `<div>
+                     Dali
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42f102744dc6ecf3fe0d2e80306c451e = L.marker(
+                [23.0205969, 113.7457788],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_2b3ea064e47241326d030cf218f6098a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2254f52667a6181382937292224b2587 = $(`<div id="html_2254f52667a6181382937292224b2587" style="width: 100.0%; height: 100.0%;">Dongguan: 4 gyms</div>`)[0];
+                popup_2b3ea064e47241326d030cf218f6098a.setContent(html_2254f52667a6181382937292224b2587);
+            
+        
+
+        marker_42f102744dc6ecf3fe0d2e80306c451e.bindPopup(popup_2b3ea064e47241326d030cf218f6098a)
+        ;
+
+        
+    
+    
+            marker_42f102744dc6ecf3fe0d2e80306c451e.bindTooltip(
+                `<div>
+                     Dongguan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_febb12cb51ffc020bcc76a4cb6766c65 = L.marker(
+                [23.0239788, 113.1159558],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_a541d7eda59f8bd7cf6b80276990792a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e3328a418189258ec0a832e6e276c07 = $(`<div id="html_6e3328a418189258ec0a832e6e276c07" style="width: 100.0%; height: 100.0%;">Foshan: 5 gyms</div>`)[0];
+                popup_a541d7eda59f8bd7cf6b80276990792a.setContent(html_6e3328a418189258ec0a832e6e276c07);
+            
+        
+
+        marker_febb12cb51ffc020bcc76a4cb6766c65.bindPopup(popup_a541d7eda59f8bd7cf6b80276990792a)
+        ;
+
+        
+    
+    
+            marker_febb12cb51ffc020bcc76a4cb6766c65.bindTooltip(
+                `<div>
+                     Foshan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_560747ec33264f16e60b7fb682313a32 = L.marker(
+                [26.0774954, 119.2918215],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_b3376a9035f9d3cb6b28da5c68b19ce7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb1a188ed26bfc6387d2b963a347e4e9 = $(`<div id="html_eb1a188ed26bfc6387d2b963a347e4e9" style="width: 100.0%; height: 100.0%;">Fuzhou: 2 gyms</div>`)[0];
+                popup_b3376a9035f9d3cb6b28da5c68b19ce7.setContent(html_eb1a188ed26bfc6387d2b963a347e4e9);
+            
+        
+
+        marker_560747ec33264f16e60b7fb682313a32.bindPopup(popup_b3376a9035f9d3cb6b28da5c68b19ce7)
+        ;
+
+        
+    
+    
+            marker_560747ec33264f16e60b7fb682313a32.bindTooltip(
+                `<div>
+                     Fuzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f162450c4b8b037403a926b081543c1c = L.marker(
+                [23.1301964, 113.2592945],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_59c6d8a48c35bbde4b5d773620af8933 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba408131a2395c35973d3c5b240b685d = $(`<div id="html_ba408131a2395c35973d3c5b240b685d" style="width: 100.0%; height: 100.0%;">Guangzhou: 9 gyms</div>`)[0];
+                popup_59c6d8a48c35bbde4b5d773620af8933.setContent(html_ba408131a2395c35973d3c5b240b685d);
+            
+        
+
+        marker_f162450c4b8b037403a926b081543c1c.bindPopup(popup_59c6d8a48c35bbde4b5d773620af8933)
+        ;
+
+        
+    
+    
+            marker_f162450c4b8b037403a926b081543c1c.bindTooltip(
+                `<div>
+                     Guangzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56a8ec267789676ac452c9a5e8c3e0c5 = L.marker(
+                [25.2779894, 110.2910622],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_20d7414f321d277911e1f348b7733a25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd3cfc261db56a29e9264338673643c2 = $(`<div id="html_dd3cfc261db56a29e9264338673643c2" style="width: 100.0%; height: 100.0%;">Guilin: 2 gyms</div>`)[0];
+                popup_20d7414f321d277911e1f348b7733a25.setContent(html_dd3cfc261db56a29e9264338673643c2);
+            
+        
+
+        marker_56a8ec267789676ac452c9a5e8c3e0c5.bindPopup(popup_20d7414f321d277911e1f348b7733a25)
+        ;
+
+        
+    
+    
+            marker_56a8ec267789676ac452c9a5e8c3e0c5.bindTooltip(
+                `<div>
+                     Guilin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cda77cde9f71d786be7943adcb8c452 = L.marker(
+                [26.6499922, 106.6246178],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_369650722cc5152d33bf4e9cbf0c053d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45e3990bc59ea0d946ec32fcc82ab664 = $(`<div id="html_45e3990bc59ea0d946ec32fcc82ab664" style="width: 100.0%; height: 100.0%;">Guiyang: 3 gyms</div>`)[0];
+                popup_369650722cc5152d33bf4e9cbf0c053d.setContent(html_45e3990bc59ea0d946ec32fcc82ab664);
+            
+        
+
+        marker_8cda77cde9f71d786be7943adcb8c452.bindPopup(popup_369650722cc5152d33bf4e9cbf0c053d)
+        ;
+
+        
+    
+    
+            marker_8cda77cde9f71d786be7943adcb8c452.bindTooltip(
+                `<div>
+                     Guiyang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19aba7b2dcc8b9edfb9f32c0ed8a9f73 = L.marker(
+                [30.2489634, 120.2052342],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_efa5cf0a9bbd3b4aa9f82131a451b509 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c3bb14e4783e8bb4c291f889807a8fe = $(`<div id="html_4c3bb14e4783e8bb4c291f889807a8fe" style="width: 100.0%; height: 100.0%;">Hangzhou: 16 gyms</div>`)[0];
+                popup_efa5cf0a9bbd3b4aa9f82131a451b509.setContent(html_4c3bb14e4783e8bb4c291f889807a8fe);
+            
+        
+
+        marker_19aba7b2dcc8b9edfb9f32c0ed8a9f73.bindPopup(popup_efa5cf0a9bbd3b4aa9f82131a451b509)
+        ;
+
+        
+    
+    
+            marker_19aba7b2dcc8b9edfb9f32c0ed8a9f73.bindTooltip(
+                `<div>
+                     Hangzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f699b60fd02412b6dc422a95534efd1d = L.marker(
+                [45.7593633, 126.6276177],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_91ea28fa246995e0b1f9ba788049b59a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a07258e633b20003a4c57be311159574 = $(`<div id="html_a07258e633b20003a4c57be311159574" style="width: 100.0%; height: 100.0%;">Harbin: 1 gyms</div>`)[0];
+                popup_91ea28fa246995e0b1f9ba788049b59a.setContent(html_a07258e633b20003a4c57be311159574);
+            
+        
+
+        marker_f699b60fd02412b6dc422a95534efd1d.bindPopup(popup_91ea28fa246995e0b1f9ba788049b59a)
+        ;
+
+        
+    
+    
+            marker_f699b60fd02412b6dc422a95534efd1d.bindTooltip(
+                `<div>
+                     Harbin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c225d39a5da3c9c6e32e0609e6c92a0 = L.marker(
+                [22.350627, 114.1849161],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_3e54de417175e609e9f74c79d6a3c320 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbe64284f78cfc21c6868c58c5686ea2 = $(`<div id="html_cbe64284f78cfc21c6868c58c5686ea2" style="width: 100.0%; height: 100.0%;">HongKong: 18 gyms</div>`)[0];
+                popup_3e54de417175e609e9f74c79d6a3c320.setContent(html_cbe64284f78cfc21c6868c58c5686ea2);
+            
+        
+
+        marker_4c225d39a5da3c9c6e32e0609e6c92a0.bindPopup(popup_3e54de417175e609e9f74c79d6a3c320)
+        ;
+
+        
+    
+    
+            marker_4c225d39a5da3c9c6e32e0609e6c92a0.bindTooltip(
+                `<div>
+                     HongKong
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5280545e146fbe7292670d7cdcfddbff = L.marker(
+                [23.1125153, 114.4127007],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_d070729ac4a8e2d4a35116f31618895f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a3c6ec52b56a990973be00ac44c60a8 = $(`<div id="html_2a3c6ec52b56a990973be00ac44c60a8" style="width: 100.0%; height: 100.0%;">HuiZhou: 1 gyms</div>`)[0];
+                popup_d070729ac4a8e2d4a35116f31618895f.setContent(html_2a3c6ec52b56a990973be00ac44c60a8);
+            
+        
+
+        marker_5280545e146fbe7292670d7cdcfddbff.bindPopup(popup_d070729ac4a8e2d4a35116f31618895f)
+        ;
+
+        
+    
+    
+            marker_5280545e146fbe7292670d7cdcfddbff.bindTooltip(
+                `<div>
+                     HuiZhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a6f4f65c54fa2dabc85bd3738f04406 = L.marker(
+                [32.5310507, 118.6367622],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_7ce6c4df868a490ca999891e1e146b0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f26bf853d8e03d4686c73a4c4a5682b = $(`<div id="html_7f26bf853d8e03d4686c73a4c4a5682b" style="width: 100.0%; height: 100.0%;">Ji'nan: 3 gyms</div>`)[0];
+                popup_7ce6c4df868a490ca999891e1e146b0f.setContent(html_7f26bf853d8e03d4686c73a4c4a5682b);
+            
+        
+
+        marker_5a6f4f65c54fa2dabc85bd3738f04406.bindPopup(popup_7ce6c4df868a490ca999891e1e146b0f)
+        ;
+
+        
+    
+    
+            marker_5a6f4f65c54fa2dabc85bd3738f04406.bindTooltip(
+                `<div>
+                     Ji'nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0261da22659d79de497688473a277e3 = L.marker(
+                [22.5816619, 113.0761073],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_fa89cb6a712764a3f1c48709d01bca2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c4d4445dc836637c042f24b47abb2a9 = $(`<div id="html_7c4d4445dc836637c042f24b47abb2a9" style="width: 100.0%; height: 100.0%;">Jiangmen: 1 gyms</div>`)[0];
+                popup_fa89cb6a712764a3f1c48709d01bca2f.setContent(html_7c4d4445dc836637c042f24b47abb2a9);
+            
+        
+
+        marker_c0261da22659d79de497688473a277e3.bindPopup(popup_fa89cb6a712764a3f1c48709d01bca2f)
+        ;
+
+        
+    
+    
+            marker_c0261da22659d79de497688473a277e3.bindTooltip(
+                `<div>
+                     Jiangmen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b761361421c0ebbc31884b35e232a092 = L.marker(
+                [30.7474425, 120.7510971],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_81f65aeb1a275912677299cdcb051310 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_864f0e76a8d273bac60a710f05ada766 = $(`<div id="html_864f0e76a8d273bac60a710f05ada766" style="width: 100.0%; height: 100.0%;">Jiaxing: 1 gyms</div>`)[0];
+                popup_81f65aeb1a275912677299cdcb051310.setContent(html_864f0e76a8d273bac60a710f05ada766);
+            
+        
+
+        marker_b761361421c0ebbc31884b35e232a092.bindPopup(popup_81f65aeb1a275912677299cdcb051310)
+        ;
+
+        
+    
+    
+            marker_b761361421c0ebbc31884b35e232a092.bindTooltip(
+                `<div>
+                     Jiaxing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b70f3c5735796a0733ddebfac198e11 = L.marker(
+                [25.0363006, 102.7086139],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_9b0a238d5cb776878c0e7e7e55133418 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7914ae924fae5eaf63ed9453b4135a6a = $(`<div id="html_7914ae924fae5eaf63ed9453b4135a6a" style="width: 100.0%; height: 100.0%;">Kunming: 6 gyms</div>`)[0];
+                popup_9b0a238d5cb776878c0e7e7e55133418.setContent(html_7914ae924fae5eaf63ed9453b4135a6a);
+            
+        
+
+        marker_6b70f3c5735796a0733ddebfac198e11.bindPopup(popup_9b0a238d5cb776878c0e7e7e55133418)
+        ;
+
+        
+    
+    
+            marker_6b70f3c5735796a0733ddebfac198e11.bindTooltip(
+                `<div>
+                     Kunming
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_104e9ae24fc1bd9e26cb606fcc7b0228 = L.marker(
+                [29.2233495, 103.5966083],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_afa98ff86cdf9cc20f93958ce8d4e7f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71eec8bf58f3a90df1cd570222734f48 = $(`<div id="html_71eec8bf58f3a90df1cd570222734f48" style="width: 100.0%; height: 100.0%;">Leshan: 1 gyms</div>`)[0];
+                popup_afa98ff86cdf9cc20f93958ce8d4e7f3.setContent(html_71eec8bf58f3a90df1cd570222734f48);
+            
+        
+
+        marker_104e9ae24fc1bd9e26cb606fcc7b0228.bindPopup(popup_afa98ff86cdf9cc20f93958ce8d4e7f3)
+        ;
+
+        
+    
+    
+            marker_104e9ae24fc1bd9e26cb606fcc7b0228.bindTooltip(
+                `<div>
+                     Leshan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25c4dbcae04ef1e3ed20547893874740 = L.marker(
+                [25.0009993, 109.3414252],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_6cd9bc4c9d7ae7b7dc04eb65fd389a73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8b5e201ba8722a10f8b15e044de1b17 = $(`<div id="html_a8b5e201ba8722a10f8b15e044de1b17" style="width: 100.0%; height: 100.0%;">Liuzhou: 1 gyms</div>`)[0];
+                popup_6cd9bc4c9d7ae7b7dc04eb65fd389a73.setContent(html_a8b5e201ba8722a10f8b15e044de1b17);
+            
+        
+
+        marker_25c4dbcae04ef1e3ed20547893874740.bindPopup(popup_6cd9bc4c9d7ae7b7dc04eb65fd389a73)
+        ;
+
+        
+    
+    
+            marker_25c4dbcae04ef1e3ed20547893874740.bindTooltip(
+                `<div>
+                     Liuzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e643f621baf0331b2cccbf93e66f4255 = L.marker(
+                [29.9866838, 103.7790009],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_9241a23cd27178f1dd2516b535682ce5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f682388440de597ee0eee8ef5a267007 = $(`<div id="html_f682388440de597ee0eee8ef5a267007" style="width: 100.0%; height: 100.0%;">Meishan: 1 gyms</div>`)[0];
+                popup_9241a23cd27178f1dd2516b535682ce5.setContent(html_f682388440de597ee0eee8ef5a267007);
+            
+        
+
+        marker_e643f621baf0331b2cccbf93e66f4255.bindPopup(popup_9241a23cd27178f1dd2516b535682ce5)
+        ;
+
+        
+    
+    
+            marker_e643f621baf0331b2cccbf93e66f4255.bindTooltip(
+                `<div>
+                     Meishan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9e586fe8945440db7465b2fae7a9b5d = L.marker(
+                [28.6472124, 116.0348483],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_46e43192d73c177ccb7c9daff22e2a15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c6777f15d3964b0300cac7bfb3f51ee = $(`<div id="html_9c6777f15d3964b0300cac7bfb3f51ee" style="width: 100.0%; height: 100.0%;">Nanchang: 2 gyms</div>`)[0];
+                popup_46e43192d73c177ccb7c9daff22e2a15.setContent(html_9c6777f15d3964b0300cac7bfb3f51ee);
+            
+        
+
+        marker_e9e586fe8945440db7465b2fae7a9b5d.bindPopup(popup_46e43192d73c177ccb7c9daff22e2a15)
+        ;
+
+        
+    
+    
+            marker_e9e586fe8945440db7465b2fae7a9b5d.bindTooltip(
+                `<div>
+                     Nanchang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a1bec5e5f9683615c39a6aa2a1e56ff = L.marker(
+                [32.0438284, 118.7788631],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_fa5221a66f6018f9f2739a33114fc458 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_888700ff2ed646c0647346888d6e5456 = $(`<div id="html_888700ff2ed646c0647346888d6e5456" style="width: 100.0%; height: 100.0%;">Nanjing: 3 gyms</div>`)[0];
+                popup_fa5221a66f6018f9f2739a33114fc458.setContent(html_888700ff2ed646c0647346888d6e5456);
+            
+        
+
+        marker_9a1bec5e5f9683615c39a6aa2a1e56ff.bindPopup(popup_fa5221a66f6018f9f2739a33114fc458)
+        ;
+
+        
+    
+    
+            marker_9a1bec5e5f9683615c39a6aa2a1e56ff.bindTooltip(
+                `<div>
+                     Nanjing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_908d57e46f21d3170f7a64a0993ea366 = L.marker(
+                [29.8622194, 121.6203873],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_7fe82837d141c40f19dc8dc1539474a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b193dd432e98a697c16c7fbc7cf5b91 = $(`<div id="html_3b193dd432e98a697c16c7fbc7cf5b91" style="width: 100.0%; height: 100.0%;">Ningbo: 2 gyms</div>`)[0];
+                popup_7fe82837d141c40f19dc8dc1539474a1.setContent(html_3b193dd432e98a697c16c7fbc7cf5b91);
+            
+        
+
+        marker_908d57e46f21d3170f7a64a0993ea366.bindPopup(popup_7fe82837d141c40f19dc8dc1539474a1)
+        ;
+
+        
+    
+    
+            marker_908d57e46f21d3170f7a64a0993ea366.bindTooltip(
+                `<div>
+                     Ningbo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd780c46006db0b5ef41026157598fb6 = L.marker(
+                [36.0637967, 120.3192081],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_e052123ab4d6a20f9f092d878816bd96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1af94473368bf08c0a0e92d45bea1e9 = $(`<div id="html_f1af94473368bf08c0a0e92d45bea1e9" style="width: 100.0%; height: 100.0%;">Qingdao: 2 gyms</div>`)[0];
+                popup_e052123ab4d6a20f9f092d878816bd96.setContent(html_f1af94473368bf08c0a0e92d45bea1e9);
+            
+        
+
+        marker_bd780c46006db0b5ef41026157598fb6.bindPopup(popup_e052123ab4d6a20f9f092d878816bd96)
+        ;
+
+        
+    
+    
+            marker_bd780c46006db0b5ef41026157598fb6.bindTooltip(
+                `<div>
+                     Qingdao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2edc9e26e4e032c44825716b277ebc5 = L.marker(
+                [31.2312707, 121.4700152],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_48d7093802ae58effd0a39ce960d8e8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be51705327c69a47c625201d5e590069 = $(`<div id="html_be51705327c69a47c625201d5e590069" style="width: 100.0%; height: 100.0%;">Shanghai: 50 gyms</div>`)[0];
+                popup_48d7093802ae58effd0a39ce960d8e8c.setContent(html_be51705327c69a47c625201d5e590069);
+            
+        
+
+        marker_e2edc9e26e4e032c44825716b277ebc5.bindPopup(popup_48d7093802ae58effd0a39ce960d8e8c)
+        ;
+
+        
+    
+    
+            marker_e2edc9e26e4e032c44825716b277ebc5.bindTooltip(
+                `<div>
+                     Shanghai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cafd26394baa6f84763db1eb33a124d0 = L.marker(
+                [41.8026095, 123.4279105],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_0cfdacf9f6787f6d3824f9b55d2473e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d9e0f6389b5b8af8228036442aebbb8 = $(`<div id="html_0d9e0f6389b5b8af8228036442aebbb8" style="width: 100.0%; height: 100.0%;">Shenyang: 3 gyms</div>`)[0];
+                popup_0cfdacf9f6787f6d3824f9b55d2473e4.setContent(html_0d9e0f6389b5b8af8228036442aebbb8);
+            
+        
+
+        marker_cafd26394baa6f84763db1eb33a124d0.bindPopup(popup_0cfdacf9f6787f6d3824f9b55d2473e4)
+        ;
+
+        
+    
+    
+            marker_cafd26394baa6f84763db1eb33a124d0.bindTooltip(
+                `<div>
+                     Shenyang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbd95483357f30b9688939c7834f7480 = L.marker(
+                [22.5445741, 114.0545429],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_ade4ba361f6f75f8039140634da0bea5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_475a600901584e100bca61885972f986 = $(`<div id="html_475a600901584e100bca61885972f986" style="width: 100.0%; height: 100.0%;">Shenzhen: 23 gyms</div>`)[0];
+                popup_ade4ba361f6f75f8039140634da0bea5.setContent(html_475a600901584e100bca61885972f986);
+            
+        
+
+        marker_bbd95483357f30b9688939c7834f7480.bindPopup(popup_ade4ba361f6f75f8039140634da0bea5)
+        ;
+
+        
+    
+    
+            marker_bbd95483357f30b9688939c7834f7480.bindTooltip(
+                `<div>
+                     Shenzhen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad7cbb8c94d16a92f7b2b89f147beb95 = L.marker(
+                [38.0429742, 114.5088385],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_0fc7a2761c5e0e47bad4cae1a71eb0f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_321f1c734dea257ffa6e5d31468dc39a = $(`<div id="html_321f1c734dea257ffa6e5d31468dc39a" style="width: 100.0%; height: 100.0%;">Shijiazhuang: 1 gyms</div>`)[0];
+                popup_0fc7a2761c5e0e47bad4cae1a71eb0f2.setContent(html_321f1c734dea257ffa6e5d31468dc39a);
+            
+        
+
+        marker_ad7cbb8c94d16a92f7b2b89f147beb95.bindPopup(popup_0fc7a2761c5e0e47bad4cae1a71eb0f2)
+        ;
+
+        
+    
+    
+            marker_ad7cbb8c94d16a92f7b2b89f147beb95.bindTooltip(
+                `<div>
+                     Shijiazhuang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_191ab7e5e833c91df04f02cde9e06b71 = L.marker(
+                [31.311123, 120.6212881],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_2f6b1cb382ac534d687f6bb3cd8c0434 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2706e40e3535cee521902eda8d92e1fa = $(`<div id="html_2706e40e3535cee521902eda8d92e1fa" style="width: 100.0%; height: 100.0%;">Suzhou: 3 gyms</div>`)[0];
+                popup_2f6b1cb382ac534d687f6bb3cd8c0434.setContent(html_2706e40e3535cee521902eda8d92e1fa);
+            
+        
+
+        marker_191ab7e5e833c91df04f02cde9e06b71.bindPopup(popup_2f6b1cb382ac534d687f6bb3cd8c0434)
+        ;
+
+        
+    
+    
+            marker_191ab7e5e833c91df04f02cde9e06b71.bindTooltip(
+                `<div>
+                     Suzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fecb6de6b11f950e9654040ecdb2f51 = L.marker(
+                [28.6581723, 121.4163876],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_48f2b7e895b946e7683f72d88636f0f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_401131502f3fde474c84149bdf3e9acc = $(`<div id="html_401131502f3fde474c84149bdf3e9acc" style="width: 100.0%; height: 100.0%;">Taizhou: 1 gyms</div>`)[0];
+                popup_48f2b7e895b946e7683f72d88636f0f6.setContent(html_401131502f3fde474c84149bdf3e9acc);
+            
+        
+
+        marker_7fecb6de6b11f950e9654040ecdb2f51.bindPopup(popup_48f2b7e895b946e7683f72d88636f0f6)
+        ;
+
+        
+    
+    
+            marker_7fecb6de6b11f950e9654040ecdb2f51.bindTooltip(
+                `<div>
+                     Taizhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbebf7072ad9812ca900aaedb349a090 = L.marker(
+                [39.6295951, 118.1738712],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_7d843310960381ae8967857ce8f5329f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b13e3b0bc994ee0d379cfc3608e449ef = $(`<div id="html_b13e3b0bc994ee0d379cfc3608e449ef" style="width: 100.0%; height: 100.0%;">Tangshan: 2 gyms</div>`)[0];
+                popup_7d843310960381ae8967857ce8f5329f.setContent(html_b13e3b0bc994ee0d379cfc3608e449ef);
+            
+        
+
+        marker_dbebf7072ad9812ca900aaedb349a090.bindPopup(popup_7d843310960381ae8967857ce8f5329f)
+        ;
+
+        
+    
+    
+            marker_dbebf7072ad9812ca900aaedb349a090.bindTooltip(
+                `<div>
+                     Tangshan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77a7f3ea050d05ca2135753526ecd441 = L.marker(
+                [39.3032619, 117.4163641],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_2970638776d00866b58629cb9dfc86c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27b8b5e50846fd50a6101b1bd55128a4 = $(`<div id="html_27b8b5e50846fd50a6101b1bd55128a4" style="width: 100.0%; height: 100.0%;">Tianjin: 4 gyms</div>`)[0];
+                popup_2970638776d00866b58629cb9dfc86c4.setContent(html_27b8b5e50846fd50a6101b1bd55128a4);
+            
+        
+
+        marker_77a7f3ea050d05ca2135753526ecd441.bindPopup(popup_2970638776d00866b58629cb9dfc86c4)
+        ;
+
+        
+    
+    
+            marker_77a7f3ea050d05ca2135753526ecd441.bindTooltip(
+                `<div>
+                     Tianjin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e857df3d4d60b7e05166c2b013da9504 = L.marker(
+                [27.9963899, 120.695345],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_f780c6495de667d74d627805513fa592 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f84313d69b48885fd467fc445d4cb2d = $(`<div id="html_9f84313d69b48885fd467fc445d4cb2d" style="width: 100.0%; height: 100.0%;">Wenzhou: 2 gyms</div>`)[0];
+                popup_f780c6495de667d74d627805513fa592.setContent(html_9f84313d69b48885fd467fc445d4cb2d);
+            
+        
+
+        marker_e857df3d4d60b7e05166c2b013da9504.bindPopup(popup_f780c6495de667d74d627805513fa592)
+        ;
+
+        
+    
+    
+            marker_e857df3d4d60b7e05166c2b013da9504.bindTooltip(
+                `<div>
+                     Wenzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ce055974db492b0e649120306801287 = L.marker(
+                [30.5951051, 114.2999353],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_94bbfdce9228a91c12a21eee95f35332 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e67b315118f1563f8f97b4cbd92f25f = $(`<div id="html_6e67b315118f1563f8f97b4cbd92f25f" style="width: 100.0%; height: 100.0%;">Wuhan: 7 gyms</div>`)[0];
+                popup_94bbfdce9228a91c12a21eee95f35332.setContent(html_6e67b315118f1563f8f97b4cbd92f25f);
+            
+        
+
+        marker_2ce055974db492b0e649120306801287.bindPopup(popup_94bbfdce9228a91c12a21eee95f35332)
+        ;
+
+        
+    
+    
+            marker_2ce055974db492b0e649120306801287.bindTooltip(
+                `<div>
+                     Wuhan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2164a47988519034e33c628bdc917d8 = L.marker(
+                [31.5776626, 120.2952752],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_15cf09f4ce45ac62413ce53a80f2bcff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f340965a304fa6f7d0e53fa4fd0ae9d3 = $(`<div id="html_f340965a304fa6f7d0e53fa4fd0ae9d3" style="width: 100.0%; height: 100.0%;">Wuxi: 2 gyms</div>`)[0];
+                popup_15cf09f4ce45ac62413ce53a80f2bcff.setContent(html_f340965a304fa6f7d0e53fa4fd0ae9d3);
+            
+        
+
+        marker_f2164a47988519034e33c628bdc917d8.bindPopup(popup_15cf09f4ce45ac62413ce53a80f2bcff)
+        ;
+
+        
+    
+    
+            marker_f2164a47988519034e33c628bdc917d8.bindTooltip(
+                `<div>
+                     Wuxi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7583d80c2a36838171ec7a064267bfd = L.marker(
+                [34.261004, 108.9423363],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_0c580497d218d8aa1b57a973629e27d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5860c33971442cde7ea0e88b9ccaa22 = $(`<div id="html_f5860c33971442cde7ea0e88b9ccaa22" style="width: 100.0%; height: 100.0%;">Xi'an: 7 gyms</div>`)[0];
+                popup_0c580497d218d8aa1b57a973629e27d0.setContent(html_f5860c33971442cde7ea0e88b9ccaa22);
+            
+        
+
+        marker_b7583d80c2a36838171ec7a064267bfd.bindPopup(popup_0c580497d218d8aa1b57a973629e27d0)
+        ;
+
+        
+    
+    
+            marker_b7583d80c2a36838171ec7a064267bfd.bindTooltip(
+                `<div>
+                     Xi'an
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07d37b6402dc5b7ad59dbb7a965a3948 = L.marker(
+                [24.5438732, 118.0768065],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_dfa327be88db795a8432d346e52d7295 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99dc5a49fba1ec4c718050916c5bb057 = $(`<div id="html_99dc5a49fba1ec4c718050916c5bb057" style="width: 100.0%; height: 100.0%;">Xiamen: 3 gyms</div>`)[0];
+                popup_dfa327be88db795a8432d346e52d7295.setContent(html_99dc5a49fba1ec4c718050916c5bb057);
+            
+        
+
+        marker_07d37b6402dc5b7ad59dbb7a965a3948.bindPopup(popup_dfa327be88db795a8432d346e52d7295)
+        ;
+
+        
+    
+    
+            marker_07d37b6402dc5b7ad59dbb7a965a3948.bindTooltip(
+                `<div>
+                     Xiamen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_818220313b752ae82e314000946e43ef = L.marker(
+                [24.8630286, 110.4871831],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_2f9b4a296ff4ac31acc18b99b7b97a9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7bf4d38424daf33cbd290fc8f015a9c = $(`<div id="html_b7bf4d38424daf33cbd290fc8f015a9c" style="width: 100.0%; height: 100.0%;">Yangshuo: 1 gyms</div>`)[0];
+                popup_2f9b4a296ff4ac31acc18b99b7b97a9a.setContent(html_b7bf4d38424daf33cbd290fc8f015a9c);
+            
+        
+
+        marker_818220313b752ae82e314000946e43ef.bindPopup(popup_2f9b4a296ff4ac31acc18b99b7b97a9a)
+        ;
+
+        
+    
+    
+            marker_818220313b752ae82e314000946e43ef.bindTooltip(
+                `<div>
+                     Yangshuo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54f76bd16fb569ce90d0290534be31a8 = L.marker(
+                [32.3968554, 119.4077658],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_17e89834e6b7807d329ca6e827a11aea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a967449ce2c313d8e6d30931e7d3e0da = $(`<div id="html_a967449ce2c313d8e6d30931e7d3e0da" style="width: 100.0%; height: 100.0%;">Yangzhou: 1 gyms</div>`)[0];
+                popup_17e89834e6b7807d329ca6e827a11aea.setContent(html_a967449ce2c313d8e6d30931e7d3e0da);
+            
+        
+
+        marker_54f76bd16fb569ce90d0290534be31a8.bindPopup(popup_17e89834e6b7807d329ca6e827a11aea)
+        ;
+
+        
+    
+    
+            marker_54f76bd16fb569ce90d0290534be31a8.bindTooltip(
+                `<div>
+                     Yangzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39ef336fc1906e34fcfb96b07e4399a9 = L.marker(
+                [34.7533392, 113.6599983],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_21f98198ffb18aa77c5157a7e3dfd9e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32b2ca6444d0a5409d804effda023b1c = $(`<div id="html_32b2ca6444d0a5409d804effda023b1c" style="width: 100.0%; height: 100.0%;">Zhengzhou: 2 gyms</div>`)[0];
+                popup_21f98198ffb18aa77c5157a7e3dfd9e6.setContent(html_32b2ca6444d0a5409d804effda023b1c);
+            
+        
+
+        marker_39ef336fc1906e34fcfb96b07e4399a9.bindPopup(popup_21f98198ffb18aa77c5157a7e3dfd9e6)
+        ;
+
+        
+    
+    
+            marker_39ef336fc1906e34fcfb96b07e4399a9.bindTooltip(
+                `<div>
+                     Zhengzhou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fce5741017228f6fab88a35cf4da7ac0 = L.marker(
+                [22.5196895, 113.3870834],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_cca29d88c90bca3109a19207d8542362 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8afad81dd358c0c50907b1cb68565527 = $(`<div id="html_8afad81dd358c0c50907b1cb68565527" style="width: 100.0%; height: 100.0%;">Zhongshan: 3 gyms</div>`)[0];
+                popup_cca29d88c90bca3109a19207d8542362.setContent(html_8afad81dd358c0c50907b1cb68565527);
+            
+        
+
+        marker_fce5741017228f6fab88a35cf4da7ac0.bindPopup(popup_cca29d88c90bca3109a19207d8542362)
+        ;
+
+        
+    
+    
+            marker_fce5741017228f6fab88a35cf4da7ac0.bindTooltip(
+                `<div>
+                     Zhongshan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbad99d1ab5c645b28aafe3bc17bd254 = L.marker(
+                [22.273734, 113.5721327],
+                {}
+            ).addTo(map_7463a2a8bc7b09bae9ad48522f668231);
+        
+    
+        var popup_6c7ef82e26b1c130ca9c37d7bb0cc94f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67377deb71457e9627334de9ce59c31c = $(`<div id="html_67377deb71457e9627334de9ce59c31c" style="width: 100.0%; height: 100.0%;">Zhuhai: 4 gyms</div>`)[0];
+                popup_6c7ef82e26b1c130ca9c37d7bb0cc94f.setContent(html_67377deb71457e9627334de9ce59c31c);
+            
+        
+
+        marker_fbad99d1ab5c645b28aafe3bc17bd254.bindPopup(popup_6c7ef82e26b1c130ca9c37d7bb0cc94f)
+        ;
+
+        
+    
+    
+            marker_fbad99d1ab5c645b28aafe3bc17bd254.bindTooltip(
+                `<div>
+                     Zhuhai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
